@@ -1,0 +1,95 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+    background-color: rgb(228, 228, 228);
+}
+
+.gradient-heading {
+    background: linear-gradient(-45deg, rgb(50, 152, 247), rgb(250, 192, 31), rgb(50, 152, 247), rgb(250, 192, 31));
+    animation: gradient 4s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 5rem;
+    background-size: 400% 400%;
+} 
+
+#bodyQuiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quiz {
+    margin-top: 3rem;
+}
+
+.question{
+	font-weight: 600;
+}
+
+#bodyQuestion{
+    background-color:#261e4f;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.reponse {
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: rgb(113, 111, 240);
+	color: #fff;
+	border: 0px;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: rgb(75, 73, 172);
+}
+
+#total {
+    text-align: center;
+}
+
+#divReset {
+    margin-top: 15px;
+}
+
+#reset {
+    font-family: sans-serif;
+	font-size: 20px;
+	background-color: rgb(226, 55, 55);
+	color: #fff;
+	border: 0px;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+#reset:hover{
+    background-color: rgb(151, 36, 36);
+}
